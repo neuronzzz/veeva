@@ -1,6 +1,9 @@
 import glob
 
+import numpy as np
 import pandas as pd
+from pylev import levenshtein
+from sklearn.cluster import DBSCAN
 
 directory = "./Q4拜访计划ALL/*.xlsx"
 output_doc = 'hehe.xlsx'
@@ -18,29 +21,15 @@ writer.save()
 gp = df.groupby('Account Owner')
 print(gp.count()['ID 18'])
 
-# DBSCAN
-from sklearn.cluster import DBSCAN
-import Levenshtein
-import numpy as np
-from functools import partial
-from sklearn.metrics.pairwise import pairwise_distances
-from pylev import levenshtein
-
 cols = df.columns.values
-print(cols)
 
 
 def lev_metric(x, y):
-    i, j = int(x[0]), int(y[0])  # extract indices
-    return levenshtein(cols[i], cols[j])
+    return levenshtein(cols[x[0]], cols[y[0]])
 
 
 X = np.arange(len(cols)).reshape(-1, 1)
 db = DBSCAN(eps=1, min_samples=1, metric=lev_metric).fit(X)
 print(db.labels_)
 
-# def mylev(s, u, v):
-#     return levenshtein(s[int(u)], s[int(v)])
-
-
-# print(pairwise_distances(np.arange(len(cols)).reshape(-1, 1), metric=partial(mylev, cols)))
+# todo: merge columns by sum
