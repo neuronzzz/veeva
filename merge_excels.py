@@ -47,7 +47,9 @@ if __name__ == '__main__':
         # 过滤过程相当于[]中括号内部，传入一个条件，根据这个条件来过滤。本质上，这个条件返回的是一个布尔索引（series with True/False value），
         # 根据这个索引来决定哪些row保留
         # 过滤null的几种方法：https://stackoverflow.com/questions/22551403/python-pandas-filtering-out-nan-from-a-data-selection-of-a-column-of-strings
-        df_part = df_part[df_part[col_ID_18].notnull()]
+        # df_part = df_part.dropna(thresh=9)
+        # 由于有的ID 18是空，所以需要用Name来过滤
+        df_part = df_part[df_part['Name'].notnull()]
         df2 = df_part
 
         # todo: debug code
