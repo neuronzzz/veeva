@@ -8,6 +8,12 @@ name = "pypi"
 [packages]
 pandas = "*"
 numpy = "*"
+matplotlib = "*"
+pylev = "*"
+scikit-learn = "*"
+xlrd = "*"
+xlsxwriter = "*"
+openpyxl = "*"
 
 [dev-packages]
 
