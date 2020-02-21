@@ -4,17 +4,17 @@
 * from website: https://docs.conda.io/en/latest/miniconda.html, choose "windows, python3.7+ version, 64bit"
 
 * check miniconda  
-### powershell/CMD:
+##### powershell/CMD:
 ```bash
     conda
 ```
 2. Install pandas  
-### powerShell/CMD:
+##### powerShell/CMD:
 ```bash
 conda install pandas
 ```
 3. Run script  
-### powserShell/CMD:
+##### powserShell/CMD:
 ```bash
 python compare_excels.py
 ```
