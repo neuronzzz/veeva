@@ -4,24 +4,24 @@
 * from website: https://docs.conda.io/en/latest/miniconda.html
     * choose windows, python3.7+ version, 64bit,
 * check installation
-Powershell/cmd
+###Powershell/cmd
 ```bash
     conda
 ```
 2. Install pandas
-PowerShell/CMD
+###PowerShell/CMD
 ```bash
 conda install pandas
 ```
 3. Run script
-PowserShell/CMD
+###PowserShell/CMD
 ```bash
 python compare_excels.py
 ```
 
 # veeva - tech info
 
-# packages
+### packages
 pandas
 numpy
 matplotlib
@@ -33,5 +33,5 @@ xlrd
 xlsxwriter
 openpyxl
 
-# DBCAN
+### DBCAN
 https://github.com/scikit-learn/scikit-learn/issues/3737
