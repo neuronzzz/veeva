@@ -9,12 +9,12 @@ Powershell/cmd
     conda
 ```
 2. Install pandas
-PowerShell/CMD
+PowerShell/CMD  
 ```bash
 conda install pandas
 ```
 3. Run script
-PowserShell/CMD
+PowserShell/CMD  
 ```bash
 python compare_excels.py
 ```
@@ -25,13 +25,13 @@ python compare_excels.py
 pandas  
 numpy  
 matplotlib  
-
-scikit-learn
-pylev
-
-xlrd
-xlsxwriter
-openpyxl
+  
+scikit-learn  
+pylev  
+  
+xlrd  
+xlsxwriter  
+openpyxl  
 
 ### DBCAN
 https://github.com/scikit-learn/scikit-learn/issues/3737
