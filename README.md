@@ -22,9 +22,9 @@ python compare_excels.py
 # veeva - tech info
 
 ### packages
-pandas
-numpy
-matplotlib
+pandas  
+numpy  
+matplotlib  
 
 scikit-learn
 pylev
