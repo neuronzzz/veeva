@@ -1,20 +1,20 @@
 # Windowns system:
-1. Miniconda
+1. Install Miniconda
 * download directly: https://repo.anaconda.com/miniconda/Miniconda3-latest-Windows-x86_64.exe
 * from website: https://docs.conda.io/en/latest/miniconda.html
     * choose windows, python3.7+ version, 64bit,
-* check installation
-###Powershell/cmd
+* check miniconda
+Powershell/cmd
 ```bash
     conda
 ```
 2. Install pandas
-###PowerShell/CMD
+PowerShell/CMD
 ```bash
 conda install pandas
 ```
 3. Run script
-###PowserShell/CMD
+PowserShell/CMD
 ```bash
 python compare_excels.py
 ```
